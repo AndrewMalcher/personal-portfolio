@@ -184,7 +184,23 @@
 	border-radius: 20px;
 }
 
+.project-item-image-2 {
+	background-image: url("images/Screenshot_2.png");
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
 
+.project-item-image-3 {
+	background-image: url("images/Screenshot_3.png");
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
 
 
 
