@@ -36,12 +36,6 @@
 	opacity: 100%;
 }
 
-
-
-
-
-
-
 /* Showcase */
 
 .showcase-container {
@@ -54,10 +48,6 @@
 	background-image: url("images/Screenshot_1.png");
 	background-size: cover;
 	background-position: center;
-
-
-
-
 
 	/* overlay */
 
@@ -100,18 +90,14 @@
 	line-height: 2rem;
 }
 
-
-
-
-
 /* HABILIDADES */
 
 .skills-content {
 	margin-top: 108px;
 	display: grid;
 	justify-content: space-between;
-    grid-template-columns: 250px 250px 250px 250px;
-    padding: 40px;
+	grid-template-columns: 250px 250px 250px 250px;
+	padding: 40px;
 }
 
 .skill-item {
@@ -119,99 +105,128 @@
 	background-color: #202020;
 	padding: 50px;
 	border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
 }
 
-.skill-item span{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: white;
-    font-weight: 500;
+.skill-item span {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: white;
+	font-weight: 500;
 }
-
-
-
-
 
 /* PROJETOS  */
 
 .projects-content {
-    margin-top: 118px;
+	margin-top: 118px;
 }
 
+/* INVERTE O PROJETO PARA COMEÇAR PELA ESQUERDA */
+
+.projects-content .project-item:nth-child(2) {
+	justify-content: flex-end;
+	text-align: right;
+}
+.projects-content .project-item:nth-child(2) > .project-item-image {
+	order: 2;
+	margin-left: 50px;
+}
+.projects-content .project-item:nth-child(2) > .project-text {
+	order: 1;
+}
+
+/* FIM */
+
 .project-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.project-text {
+	margin-left: 50px;
+	max-width: 600px;
+}
+
+.project-text p {
+	color: white;
+	opacity: 75%;
+	line-height: 30px;
+}
+
+.project-text h3 {
+	color: white;
+	font-weight: 500;
+	font-size: 2.25rem;
 }
 
 .project-item > img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
 }
 
-.project-text {
-    margin-left: 50px;
-    max-width: 600px;
+.project-item-image {
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.project-text p {
-    color: white;
-    opacity: 75%;
-	line-height: 30px;
-
-}
-
-.project-text h3 {
-    color: white;
-    font-weight: 500;
-    font-size: 2.25rem;
-}
-
-.project-item-image-1 {
+.project-item-1 {
 	background-image: url("images/Screenshot_1.png");
-	width: 300px;
-	height: 300px;
-	background-size: cover;
 	background-position: center;
-	border-radius: 20px;
 }
 
-.project-item-image-2 {
+.project-item-2 {
 	background-image: url("images/Screenshot_2.png");
-	width: 300px;
-	height: 300px;
-	background-size: cover;
-	background-position: center;
-	border-radius: 20px;
 }
 
-.project-item-image-3 {
+.project-item-3 {
 	background-image: url("images/Screenshot_3.png");
-	width: 300px;
-	height: 300px;
-	background-size: cover;
-	background-position: center;
-	border-radius: 20px;
 }
 
+/* RODAPÉ */
 
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.contact-form .form-input {
+	margin-bottom: 20px;
+}
 
+.footer-container {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	color: rgba(255, 255, 255, 0.75);
+	justify-content: space-between;
+	padding: 50px;
+}
 
-
-
-
-
+.social-items i {
+	margin-right: 25px;
+}
 
 /* utilities */
+
+a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+}
 
 .section-container {
 	width: 100%;
@@ -243,4 +258,27 @@
 
 .rounded {
 	border-radius: 100%;
+}
+
+.form-input {
+	border: none;
+	border-radius: 10px;
+	background-color: #202020;
+	padding: 20px;
+	color: rgba(255, 255, 255, 0.5);
+	resize: none;
+}
+
+.form-input:focus {
+	outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-button {
+	border: none;
+	border-radius: 10px;
+	background-color: black;
+	padding: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
 }
