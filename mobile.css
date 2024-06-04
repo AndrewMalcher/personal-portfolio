@@ -1,0 +1,123 @@
+@media (max-width: 1024px) {
+	.navbar-container {
+		display: none;
+	}
+
+	/* SHOWCASE */
+
+	.showcase-container > h1 {
+		font-size: 3rem;
+		text-align: center;
+		line-height: 3rem;
+	}
+
+	.showcase-container > p {
+		font-size: 0.975rem;
+		text-align: center;
+	}
+
+	/* sobre mim */
+
+	.about-me-content {
+		flex-direction: column;
+	}
+
+	.about-me-content > img {
+		width: 200px;
+		height: 200px;
+		margin-right: 0;
+	}
+
+	.about-me-content > p {
+		text-align: center;
+		flex-direction: column;
+		margin-top: 15px;
+	}
+
+	/* HABILIDADES */
+
+	.skills-content {
+		flex-direction: column;
+		display: flex;
+		margin-top: 40px;
+	}
+
+	.skill-item {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+		padding: 20px;
+	}
+
+	.skill-item img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.skill-item p {
+		font-size: 0.875rem;
+	}
+
+	.skill-item span {
+		margin-top: 10px;
+	}
+
+	/* PROJETOS */
+
+	.project-item {
+		flex-direction: column;
+		margin-bottom: 40px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.project-text {
+		margin: 0;
+		max-width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.project-text h3 {
+		font-size: 1.5rem;
+	}
+	.project-text p {
+		font-size: 1 rem;
+	}
+
+	.projects-content .project-item:nth-child(2) {
+		justify-content: center;
+		text-align: center;
+	}
+	.projects-content .project-item:nth-child(2) > .project-item-image {
+		order: 1;
+		margin-left: 0;
+	}
+	.projects-content .project-item:nth-child(2) > .project-text {
+		order: 2;
+	}
+
+    /* FORMULÁRIO */
+
+    .contact-form {
+        margin-top: 40px;
+    }
+
+    /* footer */
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+	/* UTILITIES */
+
+	.section-title {
+		font-size: 2rem;
+	}
+
+	.section-container {
+		padding: 30px;
+	}
+}
