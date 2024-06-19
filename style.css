@@ -113,7 +113,7 @@
 	width: 20%;
 }
 
-.skill-item span {
+.skill-item span, p {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	color: white;
