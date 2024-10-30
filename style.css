@@ -94,9 +94,11 @@
 
 .skills-content {
 	margin-top: 108px;
-	display: flex;
+	display: grid;
 	justify-content: space-between;
 	padding: 40px;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
 }
 
 .skill-item {
@@ -110,8 +112,15 @@
 	justify-content: flex-start;
 	margin-bottom: 20px;
 	margin-right: 10px;
-	width: 20%;
+	width: 100%;
+	opacity:0;
+	transform: translateY(20px);
+        transition: opacity 1.5s ease-out, transform 0.6s ease-out;
 }
+.skill-item.animate {
+	opacity: 1;
+	transform: translateY(0);
+  }
 
 .skill-item span {
 	margin-top: 15px;
@@ -186,8 +195,10 @@
 }
 
 .project-item-1 {
-	background-image: url("images/Screenshot_1.png");
+	background-image: url("https://cdn.areademembros.com/cache/XR11woLtefs48MVTD6htyIXSYZlbJLw6CSlYGpTB-550x550-resized.png");
 	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .project-item-2 {
