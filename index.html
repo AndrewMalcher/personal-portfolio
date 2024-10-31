@@ -11,6 +11,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/transition-style" />
+		<script defer src="script.js"></script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script
@@ -257,8 +258,9 @@
 
 					<form
 						class="contact-form"
-						action="https://formsubmit.co/andrew.malcher.r@gmail.com"
+						action="https://formsubmit.co/ajax/andrew_malcher_@hotmail.com"
 						method="POST"
+						data-form
 					>
 						<input
 							type="text"
@@ -284,8 +286,11 @@
 							class="form-input"
 							required
 						></textarea>
+						<input type="hidden" name="_captcha" value="false" />
 
-						<button type="submit" class="form-button">Enviar</button>
+						<button type="submit" class="form-button" data-button>
+							Enviar
+						</button>
 					</form>
 				</div>
 			</div>
@@ -312,5 +317,4 @@
 		</footer>
 	</body>
 	<script src="script-animation.js"></script>
-	<script src="script.js"></script>
 </html>

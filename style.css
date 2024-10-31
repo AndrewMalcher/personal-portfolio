@@ -15,12 +15,12 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.navbar-container > ul {
+.navbar-container>ul {
 	display: flex;
 	list-style: none;
 }
 
-.navbar-container > ul > li {
+.navbar-container>ul>li {
 	margin-right: 40px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -32,7 +32,7 @@
 	cursor: pointer;
 }
 
-.navbar-container > ul > li:hover {
+.navbar-container>ul>li:hover {
 	opacity: 100%;
 }
 
@@ -55,13 +55,13 @@
 	background-blend-mode: color;
 }
 
-.showcase-container > h1 {
+.showcase-container>h1 {
 	font-weight: 600;
 	font-size: 4rem;
 	margin-bottom: 20px;
 }
 
-.showcase-container > p {
+.showcase-container>p {
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1.25rem;
@@ -113,14 +113,15 @@
 	margin-bottom: 20px;
 	margin-right: 10px;
 	width: 100%;
-	opacity:0;
+	opacity: 0;
 	transform: translateY(20px);
-        transition: opacity 1.5s ease-out, transform 0.6s ease-out;
+	transition: opacity 1.5s ease-out, transform 0.6s ease-out;
 }
+
 .skill-item.animate {
 	opacity: 1;
 	transform: translateY(0);
-  }
+}
 
 .skill-item span {
 	margin-top: 15px;
@@ -128,6 +129,7 @@
 	color: white;
 	font-weight: 500;
 }
+
 .skill-item p {
 	color: white;
 	text-align: center;
@@ -145,11 +147,13 @@
 	justify-content: flex-end;
 	text-align: right;
 }
-.projects-content .project-item:nth-child(2) > .project-item-image {
+
+.projects-content .project-item:nth-child(2)>.project-item-image {
 	order: 2;
 	margin-left: 50px;
 }
-.projects-content .project-item:nth-child(2) > .project-text {
+
+.projects-content .project-item:nth-child(2)>.project-text {
 	order: 1;
 }
 
@@ -178,7 +182,7 @@
 	font-size: 2.25rem;
 }
 
-.project-item > img {
+.project-item>img {
 	width: 300px;
 	height: 300px;
 	border-radius: 20px;
@@ -297,4 +301,17 @@ a {
 	color: white;
 	text-transform: uppercase;
 	font-weight: 600;
+}
+
+.success,
+.error {
+	text-align: center;
+}
+
+.success {
+	color: greenyellow;
+}
+
+.error {
+	color: tomato;
 }
