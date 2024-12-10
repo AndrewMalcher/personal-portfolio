@@ -2,6 +2,7 @@ window.revelar = ScrollReveal({ reset: true });
 
 // topo do site
 revelar.reveal(".efeito-showcase-container", {
+	delay: 100,
 	duration: 2000,
 	origin: "top",
 	distance: "120px",
