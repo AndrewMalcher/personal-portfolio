@@ -1,17 +1,18 @@
 @media (max-width: 1024px) {
 	.navbar-container {
 		display: none;
+		z-index: 100;
 	}
 
 	/* SHOWCASE */
 
-	.showcase-container > h1 {
+	.showcase-container>h1 {
 		font-size: 3rem;
 		text-align: center;
 		line-height: 3rem;
 	}
 
-	.showcase-container > p {
+	.showcase-container>p {
 		font-size: 0.975rem;
 		text-align: center;
 	}
@@ -22,13 +23,13 @@
 		flex-direction: column;
 	}
 
-	.about-me-content > img {
+	.about-me-content>img {
 		width: 200px;
 		height: 200px;
 		margin-right: 0;
 	}
 
-	.about-me-content > p {
+	.about-me-content>p {
 		text-align: center;
 		flex-direction: column;
 		margin-top: 15px;
@@ -81,6 +82,7 @@
 	.project-text h3 {
 		font-size: 1.5rem;
 	}
+
 	.project-text p {
 		font-size: 1 rem;
 	}
@@ -89,27 +91,28 @@
 		justify-content: center;
 		text-align: center;
 	}
-	.projects-content .project-item:nth-child(2) > .project-item-image {
+
+	.projects-content .project-item:nth-child(2)>.project-item-image {
 		order: 1;
 		margin-left: 0;
 	}
-	.projects-content .project-item:nth-child(2) > .project-text {
+
+	.projects-content .project-item:nth-child(2)>.project-text {
 		order: 2;
 	}
 
-    /* FORMULÁRIO */
+	/* FORMULÁRIO */
 
-    .contact-form {
-        margin-top: 40px;
-    }
+	.contact-form {
+		margin-top: 40px;
+	}
 
-    /* footer */
+	/* footer */
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+	}
 
 	/* UTILITIES */
 

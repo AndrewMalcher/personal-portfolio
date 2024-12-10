@@ -12,6 +12,8 @@
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/transition-style" />
 		<script defer src="script.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="reveal.js" defer></script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script
@@ -22,15 +24,21 @@
 	<body>
 		<nav class="navbar-container">
 			<ul>
-				<li><a href="#inicio">Início</a></li>
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#habilidades">Habilidades</a></li>
-				<li><a href="#projetos">Projetos</a></li>
-				<li><a href="#contatos">Contatos</a></li>
+				<li class="efeito-aparecer-esquerda"><a href="#inicio">Início</a></li>
+				<li class="efeito-aparecer-esquerda"><a href="#sobre">Sobre</a></li>
+				<li class="efeito-aparecer-esquerda">
+					<a href="#habilidades">Habilidades</a>
+				</li>
+				<li class="efeito-aparecer-esquerda">
+					<a href="#projetos">Projetos</a>
+				</li>
+				<li class="efeito-aparecer-esquerda">
+					<a href="#contatos">Contatos</a>
+				</li>
 			</ul>
 		</nav>
 
-		<div class="showcase-container">
+		<div class="showcase-container efeito-showcase-container">
 			<h1>Andrew Malcher</h1>
 			<p>A Professional Web Developer</p>
 		</div>
@@ -39,10 +47,10 @@
 
 		<div class="section-container">
 			<div class="section-content" id="sobre">
-				<h2 class="section-title">Sobre Mim</h2>
+				<h2 class="section-title efeito-aparecer-esquerda">Sobre Mim</h2>
 				<div class="about-me-content">
 					<img class="rounded" src="images/showcase.jpg" alt="" />
-					<p>
+					<p class="efeito-aparecer-esquerda">
 						Sou um programador web apaixonado por tecnologia e inovação, com
 						vasta experiência em HTML, CSS e JavaScript. Minha expertise inclui
 						a utilização de frameworks modernos como React e pré-processadores
@@ -61,9 +69,9 @@
 		<!-- HABILIDADES -->
 		<div class="section-container">
 			<div class="section-content" id="habilidades">
-				<h2 class="section-title">Habilidades</h2>
+				<h2 class="section-title efeito-aparecer-esquerda">Habilidades</h2>
 				<div class="skills-content">
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -76,7 +84,7 @@
 							amplo domínio.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						>
 						<img
 							width="128"
@@ -90,7 +98,7 @@
 							domínio.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -104,7 +112,7 @@
 							utilização para otimizar e modularizar o CSS.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -117,7 +125,7 @@
 							animações e interações acontecerem.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -130,7 +138,7 @@
 							amplo domínio.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -144,7 +152,7 @@
 							significativa.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -157,7 +165,7 @@
 							interfaces responsivas e altamente customizáveis.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -170,7 +178,7 @@
 							open source. Tenho experiência no design e manipulação de dados.
 						</p>
 					</div>
-					<div class="skill-item">
+					<div class="skill-item efeito-aparecer-esquerda">
 						<img
 							width="128"
 							height="128"
@@ -192,15 +200,17 @@
 
 		<div class="section-container">
 			<div class="section-content" id="projetos">
-				<h2 class="section-title">Projetos</h2>
+				<h2 class="section-title efeito-aparecer-esquerda">Projetos</h2>
 
 				<div class="projects-content">
 					<div class="projects-container">
 						<div class="project-item">
 							<!-- IMAGEM -->
-							<div class="project-item-image project-item-1"></div>
+							<div
+								class="project-item-image project-item-1 efeito-aparecer-esquerda"
+							></div>
 							<!-- TITULO, TEXTO E DESCRIÇÃO -->
-							<div class="project-text">
+							<div class="project-text efeito-aparecer-esquerda">
 								<h3>Clone do iFood</h3>
 								<p>
 									Desenvolvi um clone do iFood para aprimorar minhas habilidades
@@ -212,9 +222,11 @@
 						</div>
 						<div class="project-item">
 							<!-- IMAGEM -->
-							<div class="project-item-image project-item-2"></div>
+							<div
+								class="project-item-image project-item-2 efeito-aparecer-esquerda"
+							></div>
 							<!-- TITULO, TEXTO E DESCRIÇÃO -->
-							<div class="project-text">
+							<div class="project-text efeito-aparecer-direita">
 								<h3>Página de Pastelaria</h3>
 								<p>
 									Desenvolvi um site moderno e interativo para a Pastelaria
@@ -229,9 +241,11 @@
 						</div>
 						<div class="project-item">
 							<!-- IMAGEM -->
-							<div class="project-item-image project-item-3"></div>
+							<div
+								class="project-item-image project-item-3 efeito-aparecer-esquerda"
+							></div>
 							<!-- TITULO, TEXTO E DESCRIÇÃO -->
-							<div class="project-text">
+							<div class="project-text efeito-aparecer-esquerda">
 								<h3>Portfólio de Programador</h3>
 								<p>
 									Criei um portfólio pessoal utilizando HTML, CSS e JavaScript
@@ -254,7 +268,9 @@
 			<!-- Rodapé do portfólio -->
 			<div class="section-container">
 				<div class="section-content" id="contatos">
-					<h2 class="section-title">Entre em contato</h2>
+					<h2 class="section-title efeito-aparecer-esquerda">
+						Entre em contato
+					</h2>
 
 					<form
 						class="contact-form"
@@ -267,7 +283,7 @@
 							name="name"
 							id="fullName"
 							placeholder="Seu nome"
-							class="form-input"
+							class="form-input efeito-aparecer-esquerda"
 							required
 						/>
 						<input
@@ -275,7 +291,7 @@
 							name="email"
 							id="email"
 							placeholder="Seu email"
-							class="form-input"
+							class="form-input efeito-aparecer-esquerda"
 							required
 						/>
 						<textarea
@@ -283,12 +299,21 @@
 							id="message"
 							rows="5"
 							placeholder="Sua mensagem"
-							class="form-input"
+							class="form-input efeito-aparecer-esquerda"
 							required
 						></textarea>
-						<input type="hidden" name="_captcha" value="false" />
+						<input
+							type="hidden"
+							name="_captcha"
+							value="false"
+							class="efeito-aparecer-esquerda"
+						/>
 
-						<button type="submit" class="form-button" data-button>
+						<button
+							type="submit"
+							class="form-button efeito-aparecer-esquerda"
+							data-button
+						>
 							Enviar
 						</button>
 					</form>
@@ -316,5 +341,4 @@
 			</div>
 		</footer>
 	</body>
-	<script src="script-animation.js"></script>
 </html>

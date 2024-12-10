@@ -5,6 +5,10 @@
 	font-family: "Poppins", sans-serif;
 }
 
+html {
+	background-color: rgba(15, 15, 15, 0.6);
+}
+
 .navbar-container {
 	width: 100%;
 	display: flex;
@@ -13,6 +17,7 @@
 	padding: 10px 20px;
 	position: absolute;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	z-index: 100;
 }
 
 .navbar-container>ul {
@@ -37,6 +42,10 @@
 }
 
 /* Showcase */
+
+.efeito-showcase-container {
+	visibility: hidden;
+}
 
 .showcase-container {
 	height: 100vh;
@@ -113,15 +122,8 @@
 	margin-bottom: 20px;
 	margin-right: 10px;
 	width: 100%;
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 1.5s ease-out, transform 0.6s ease-out;
 }
 
-.skill-item.animate {
-	opacity: 1;
-	transform: translateY(0);
-}
 
 .skill-item span {
 	margin-top: 15px;
