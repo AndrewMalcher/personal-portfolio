@@ -17,7 +17,7 @@ revelar.reveal(".efeito-aparecer-esquerda", {
 	delay: 100,
 	duration: 1000,
 	origin: "left",
-	distance: "120px",
+	distance: "10px",
 });
 revelar.reveal(".efeito-aparecer-direita", {
 	delay: 500,
