@@ -20,12 +20,12 @@ html {
 	z-index: 100;
 }
 
-.navbar-container>ul {
+.navbar-container > ul {
 	display: flex;
 	list-style: none;
 }
 
-.navbar-container>ul>li {
+.navbar-container > ul > li {
 	margin-right: 40px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -37,7 +37,7 @@ html {
 	cursor: pointer;
 }
 
-.navbar-container>ul>li:hover {
+.navbar-container > ul > li:hover {
 	opacity: 100%;
 }
 
@@ -64,13 +64,13 @@ html {
 	background-blend-mode: color;
 }
 
-.showcase-container>h1 {
+.showcase-container > h1 {
 	font-weight: 600;
 	font-size: 4rem;
 	margin-bottom: 20px;
 }
 
-.showcase-container>p {
+.showcase-container > p {
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1.25rem;
@@ -124,7 +124,6 @@ html {
 	width: 100%;
 }
 
-
 .skill-item span {
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -150,12 +149,25 @@ html {
 	text-align: right;
 }
 
-.projects-content .project-item:nth-child(2)>.project-item-image {
+.projects-content .project-item:nth-child(2) > .project-item-image {
 	order: 2;
 	margin-left: 50px;
 }
 
-.projects-content .project-item:nth-child(2)>.project-text {
+.projects-content .project-item:nth-child(2) > .project-text {
+	order: 1;
+}
+.projects-content .project-item:nth-child(4) {
+	justify-content: flex-end;
+	text-align: right;
+}
+
+.projects-content .project-item:nth-child(4) > .project-item-image {
+	order: 2;
+	margin-left: 50px;
+}
+
+.projects-content .project-item:nth-child(4) > .project-text {
 	order: 1;
 }
 
@@ -184,7 +196,7 @@ html {
 	font-size: 2.25rem;
 }
 
-.project-item>img {
+.project-item > img {
 	width: 300px;
 	height: 300px;
 	border-radius: 20px;
@@ -213,6 +225,9 @@ html {
 
 .project-item-3 {
 	background-image: url("images/Screenshot_3.png");
+}
+.project-item-4 {
+	background-image: url("images/edu-device-logo.jpeg");
 }
 
 /* RODAPÉ */
@@ -316,4 +331,39 @@ a {
 
 .error {
 	color: tomato;
+}
+
+.whatsapp-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: #25d366;
+	border-radius: 50%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-button:hover {
+	transform: scale(1.1);
+}
+
+.whatsapp-button img {
+	width: 35px;
+	height: 35px;
+}
+
+.whatsapp-button a {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+
+	text-decoration: none;
 }
